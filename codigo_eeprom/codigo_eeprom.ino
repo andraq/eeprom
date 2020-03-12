@@ -51,7 +51,7 @@ void setup(void) {
   valor1 = eeprom2float(POS_EEPROM_1);
   valor2 = eeprom2float(POS_EEPROM_1 + 4);
   valor3 = eeprom2float(POS_EEPROM_1 + 8);
-  Serial.println("DADOS EEPRO:");
+  Serial.println("DADOS EEPROM:");
   Serial.println(valor1);
   Serial.println(valor2);
   Serial.println(valor3);
@@ -105,8 +105,8 @@ float eeprom2float(unsigned int enderecoInicial){
 void loop(){
 
   valor1 += 1.32;
-  valor2 += 2.42;
-  valor3 += 3.52;
+  valor2 += 20.42;
+  valor3 += 300.52;
   float2eeprom(POS_EEPROM_1, valor1);
   float2eeprom(POS_EEPROM_2, valor2);
   float2eeprom(POS_EEPROM_3, valor3);
